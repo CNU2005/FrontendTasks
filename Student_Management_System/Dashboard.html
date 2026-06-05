@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid mt-5">
+        <div class="row p-5 gap-10 d-flex-row justify-content-center align-items-center text-center bg-light p-5 ">
+            <div class="col-3 card p-3">
+                <div class="card-body d-flex flex-column gap-3 bg-warning">
+                    <h5 class="card-title">Total Students</h5>
+                    <p class="card-text">100</p>
+                </div>
+            </div>
+            <div class="col-3 card p-3">
+                <div class="card-body d-flex flex-column gap-3 bg-success">
+                    <h5 class="card-title">Present Students</h5>
+                    <p class="card-text">90</p>
+                </div>
+            </div>
+            <div class="col-3 card p-3">
+                <div class="card-body d-flex flex-column gap-3 bg-danger">
+                    <h5 class="card-title">Absent Students</h5>
+                    <p class="card-text">10</p> 
+                </div>
+            </div>
+            <div class="col-3 card p-3">
+                <div class="card-body d-flex flex-column gap-3 bg-info">
+                    <h5 class="card-title">Placements</h5>
+                    <p class="card-text">70</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table">
+        <table class="table table-striped">
+            
+             <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search students..." aria-label="Search students" aria-describedby="button-search">
+                <button class="btn btn-outline-secondary" type="button" id="button-search">Search</button>
+                
+            </div>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Roll Number</th>
+                    <th scope="col">Branch</th>
+                    <th scope="col">Attendance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>CNU</td>
+                    <td>12345</td>
+                    <td>Computer Science</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>MANI</td>
+                    <td>12346</td>
+                    <td>Mechanical Engineering</td>
+                    <td>Absent</td>
+                </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>JAN</td>
+                        <td>12347</td>
+                        <td>Electrical Engineering</td>
+                        <td>Present</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>BNU</td>
+                        <td>12348</td>
+                        <td>Civil Engineering</td>
+                        <td>Present</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Shannnu</td>
+                        <td>12349</td>
+                        <td>Chemical Engineering</td>
+                        <td>Absent</td>
+                    </tr>
+            <tr>
+                    <th scope="row">6</th>
+                    <td>Rohit</td>
+                    <td>12350</td>
+                    <td>Computer Science</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Tarun</td>
+                    <td>12351</td>
+                    <td>Mechanical Engineering</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Ganesh</td>
+                    <td>12352</td>
+                    <td>Electrical Engineering</td>
+                    <td>Absent</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>uday</td>
+                    <td>12353</td>
+                    <td>Civil Engineering</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>sunil</td>
+                    <td>12354</td>
+                    <td>Chemical Engineering</td>
+                    <td>Present</td>
+                </tr>
+            </tr>
+                <!-- More rows can be added here -->
+
+            </tbody>
+        </table>
+
+
+    </div>
+</body>
+</html>
