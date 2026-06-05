@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillUp Institute - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .hero-banner {
+            background: linear-gradient(rgba(10, 25, 47, 0.65), rgba(10, 25, 47, 0.65)),
+                url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            min-height: 520px;
+        }
+
+        .hero-banner .hero-content {
+            min-height: 520px;
+        }
+
+        .feature-card img,
+        .faculty-card img {
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .testimonial-card {
+            min-height: 250px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="HomePage.html">SkillUp Institute</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="HomePage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-banner text-white d-flex align-items-center">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <span class="badge bg-warning text-dark mb-3">Online Course Registration Portal</span>
+                    <h1 class="display-4 fw-bold">Learn. Grow. Succeed.</h1>
+                    <p class="lead">Join SkillUp Institute and discover high-impact training programs designed for
+                        career-ready students.</p>
+                    <p>Browse our courses, register online, and start building the skills employers demand.</p>
+                    <a href="courses.html" class="btn btn-lg btn-warning shadow">Explore Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container py-5">
+        <section class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2 class="fw-bold">Featured Courses</h2>
+                    <p class="text-muted">Explore our most popular training programs with flexible duration and
+                        affordable fees.</p>
+                </div>
+                <a href="courses.html" class="btn btn-outline-primary">View all courses</a>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+                <div class="col">
+                    <div class="card feature-card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/400x250?text=Web+Development" class="card-img-top"
+                            alt="Web Development">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="mb-1"><strong>Duration:</strong> 12 weeks</p>
+                            <p class="mb-3"><strong>Fee:</strong> ₹18,000</p>
+                            <a href="courses.html" class="btn btn-primary mt-auto">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card feature-card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/400x250?text=Python+Programming" class="card-img-top"
+                            alt="Python Programming">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Python Programming</h5>
+                            <p class="mb-1"><strong>Duration:</strong> 10 weeks</p>
+                            <p class="mb-3"><strong>Fee:</strong> ₹16,500</p>
+                            <a href="courses.html" class="btn btn-primary mt-auto">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card feature-card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/400x250?text=Data+Science" class="card-img-top"
+                            alt="Data Science">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Data Science</h5>
+                            <p class="mb-1"><strong>Duration:</strong> 14 weeks</p>
+                            <p class="mb-3"><strong>Fee:</strong> ₹22,000</p>
+                            <a href="courses.html" class="btn btn-primary mt-auto">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card feature-card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/400x250?text=AI+%26+Machine+Learning" class="card-img-top"
+                            alt="AI & Machine Learning">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">AI & Machine Learning</h5>
+                            <p class="mb-1"><strong>Duration:</strong> 16 weeks</p>
+                            <p class="mb-3"><strong>Fee:</strong> ₹24,500</p>
+                            <a href="courses.html" class="btn btn-primary mt-auto">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card feature-card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/400x250?text=Java+Programming" class="card-img-top"
+                            alt="Java Programming">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Java Programming</h5>
+                            <p class="mb-1"><strong>Duration:</strong> 12 weeks</p>
+                            <p class="mb-3"><strong>Fee:</strong> ₹19,000</p>
+                            <a href="courses.html" class="btn btn-primary mt-auto">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card feature-card h-100 shadow-sm">
+                        <img src="https://via.placeholder.com/400x250?text=Cloud+Computing" class="card-img-top"
+                            alt="Cloud Computing">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Cloud Computing</h5>
+                            <p class="mb-1"><strong>Duration:</strong> 10 weeks</p>
+                            <p class="mb-3"><strong>Fee:</strong> ₹17,500</p>
+                            <a href="courses.html" class="btn btn-primary mt-auto">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Student Testimonials</h2>
+                <p class="text-muted">What our learners say about their training experience.</p>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card testimonial-card border-0 shadow-sm mx-auto" style="max-width: 800px;">
+                            <div class="card-body">
+                                <p class="card-text fs-5">"The Python course helped me land my first tech internship.
+                                    The instructors made every concept easy to follow."</p>
+                                <h5 class="card-title mt-4">- Ananya Sharma</h5>
+                                <p class="text-muted">Software Trainee</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card testimonial-card border-0 shadow-sm mx-auto" style="max-width: 800px;">
+                            <div class="card-body">
+                                <p class="card-text fs-5">"I loved the hands-on workshops in Web Development. The
+                                    projects were practical and helped me build a strong portfolio."</p>
+                                <h5 class="card-title mt-4">- Rohit Patel</h5>
+                                <p class="text-muted">Frontend Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card testimonial-card border-0 shadow-sm mx-auto" style="max-width: 800px;">
+                            <div class="card-body">
+                                <p class="card-text fs-5">"The career guidance and support from SkillUp helped me
+                                    confidently pursue a job in Data Science."</p>
+                                <h5 class="card-title mt-4">- Sneha Gupta</h5>
+                                <p class="text-muted">Data Analyst</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-6">
+                    <h5>SkillUp Institute</h5>
+                    <p>Empowering learners with career-ready skills through practical training and expert guidance.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contact Info</h5>
+                    <p class="mb-1">123 Learning Avenue, Knowledge City</p>
+                    <p class="mb-1">Phone: +91 98765 43210</p>
+                    <p class="mb-0">Email: info@skillupinstitute.com</p>
+                    <div class="mt-3 footer-links">
+                        <a href="#" class="text-white me-3">Facebook</a>
+                        <a href="#" class="text-white me-3">Twitter</a>
+                        <a href="#" class="text-white">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Student Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+                        <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

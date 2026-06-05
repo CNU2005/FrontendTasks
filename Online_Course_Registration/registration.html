@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - SkillUp Institute</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="HomePage.html">SkillUp Institute</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="HomePage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="mb-4">Course Registration</h1>
+                <div class="alert alert-success d-none" id="registrationAlert" role="alert">
+                    Registration submitted successfully! We will contact you shortly.
+                </div>
+                <form id="registrationForm">
+                    <div class="mb-3">
+                        <label for="studentName" class="form-label">Student Name</label>
+                        <input type="text" class="form-control" id="studentName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="studentEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="studentEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="studentMobile" class="form-label">Mobile Number</label>
+                        <input type="tel" class="form-control" id="studentMobile" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Gender</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Male"
+                                required>
+                            <label class="form-check-label" for="genderMale">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Female"
+                                required>
+                            <label class="form-check-label" for="genderFemale">Female</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="genderOther" value="Other"
+                                required>
+                            <label class="form-check-label" for="genderOther">Other</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="courseSelect" class="form-label">Course Selection</label>
+                        <select class="form-select" id="courseSelect" required>
+                            <option value="">Select a course</option>
+                            <option>Web Development</option>
+                            <option>Python Programming</option>
+                            <option>Data Science</option>
+                            <option>AI & Machine Learning</option>
+                            <option>Java Programming</option>
+                            <option>Cloud Computing</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="qualification" class="form-label">Qualification</label>
+                        <select class="form-select" id="qualification" required>
+                            <option value="">Select qualification</option>
+                            <option>High School Diploma</option>
+                            <option>Undergraduate</option>
+                            <option>Graduate</option>
+                            <option>Postgraduate</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea class="form-control" id="address" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="resume" class="form-label">Upload Resume</label>
+                        <input class="form-control" type="file" id="resume">
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                        <label class="form-check-label" for="termsCheck">I agree to the terms and conditions.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Registration</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light py-4">
+        <div class="container text-center text-muted">© 2026 SkillUp Institute. All rights reserved.</div>
+    </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Student Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+                        <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.getElementById('registrationAlert').classList.remove('d-none');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

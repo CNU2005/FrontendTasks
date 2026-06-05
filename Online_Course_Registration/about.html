@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SkillUp Institute</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .faculty-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="HomePage.html">SkillUp Institute</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="HomePage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="row gy-5">
+            <div class="col-lg-7">
+                <h1 class="fw-bold">About SkillUp Institute</h1>
+                <p class="lead">We are a leading training institute dedicated to preparing students for modern careers
+                    in technology and business.</p>
+                <h3 class="mt-4">Institute History</h3>
+                <p>Founded in 2018, SkillUp Institute has helped hundreds of students build practical skills through
+                    industry-aligned training programs and live project experience.</p>
+                <h3 class="mt-4">Vision</h3>
+                <p>To become the trusted source of career-ready education by delivering practical learning that
+                    transforms ambition into opportunity.</p>
+                <h3 class="mt-4">Mission</h3>
+                <p>To empower learners with high-quality training, mentorship, and real-world projects that lead to
+                    successful placements.</p>
+            </div>
+            <div class="col-lg-5">
+                <div class="p-4 bg-light rounded shadow-sm">
+                    <h3>Why Choose Us?</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">• Experienced trainers with industry backgrounds</li>
+                        <li class="mb-2">• Practical projects and interview preparation</li>
+                        <li class="mb-2">• Flexible online and classroom training</li>
+                        <li class="mb-2">• Support for placement and internships</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="pt-5">
+            <h2 class="fw-bold mb-4 text-center">Our Faculty</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+                <div class="col">
+                    <div class="card faculty-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x220?text=Mr.+Aman+Khan" class="card-img-top"
+                            alt="Mr. Aman Khan">
+                        <div class="card-body">
+                            <h5 class="card-title">Mr. Aman Khan</h5>
+                            <p class="card-text">Lead Trainer - Web Development with 10+ years of software experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card faculty-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x220?text=Ms.+Priya+Nair" class="card-img-top"
+                            alt="Ms. Priya Nair">
+                        <div class="card-body">
+                            <h5 class="card-title">Ms. Priya Nair</h5>
+                            <p class="card-text">Python & Data Science instructor with strong industry project
+                                expertise.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card faculty-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x220?text=Dr.+Rohit+Saxena" class="card-img-top"
+                            alt="Dr. Rohit Saxena">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Rohit Saxena</h5>
+                            <p class="card-text">AI and Machine Learning mentor focused on practical model development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light py-4">
+        <div class="container text-center text-muted">© 2026 SkillUp Institute. All rights reserved.</div>
+    </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Student Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+                        <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
