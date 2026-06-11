@@ -13,7 +13,7 @@
 <body>
     <div class="container mt-5">
         <h2 class="mb-4">Student Registration Form</h2>
-        <form>
+        <form onsubmit="return validateForm()">
             <div class="mb-3">
                 <label for="fullName" class="form-label">Full Name</label>
                 <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
@@ -68,5 +68,24 @@
             </div>
             <button type="submit" class="btn btn-primary">Register</button>
         </form>
+        <script>
+            function validateForm() {
+
+                const std={
+                    fullName: document.getElementById('fullName').value,
+                    rollNumber: document.getElementById('rollNumber').value,
+                    email: document.getElementById('email').value,
+                    gender: document.getElementById('gender').value,
+                    branch: document.getElementById('branch').value,
+                    dob: document.getElementById('dob').value,
+                    address: document.getElementById('address').value,
+                    photo: document.getElementById('photo').value
+                }
+                let students1=JSON.parse(localStorage.getItem('students1')) || [];
+                students1.push(std);
+                localStorage.setItem('students1',JSON.stringify(students1));
+                return false; 
+            }
+        </script>
 </body>
 </html>

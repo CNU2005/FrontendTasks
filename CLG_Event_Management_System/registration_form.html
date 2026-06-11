@@ -13,7 +13,7 @@
 <body>
     <div class="container mt-5">
         <h2 class="mb-4">Event Registration Form</h2>
-        <form>
+        <form id="registrationForm" onsubmit="store()">
             <div class="mb-3">
                 <label for="fullName" class="form-label">Full Name</label>
                 <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
@@ -55,6 +55,24 @@
             </div>
             <button type="submit" class="btn btn-primary">Register</button>
         </form>
+        <script>
+          function store(){
+            const branchSelect=document.getElementById("branch");
+            const branches=["Computer Science","Mechanical Engineering","Electrical Engineering","Civil Engineering","Chemical Engineering"];
+            const registered_user={
+                name:document.getElementById("fullName").value,
+                roll_number:document.getElementById("rollNumber").value,
+                email:document.getElementById("email").value,
+                branch:branches[branchSelect.selectedIndex - 1],
+                phone:document.getElementById("phone").value,
+                event:document.getElementById("event").value
+            }
+            let registered_users=JSON.parse(localStorage.getItem("registered_users")) || [];
+            registered_users.push(registered_user);
+            localStorage.setItem("registered_users",JSON.stringify(registered_users));
+            alert("Registration successful!");
+          }
+        </script>
     </div>
 </body>
 </html>

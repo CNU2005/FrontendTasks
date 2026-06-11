@@ -11,19 +11,93 @@
         crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="row align-items-center">
+
+        <!-- Logo -->
+        <div class="col-md-2 text-center text-md-start">
+            <img src="logo.png" alt="Logo"
+                 class="img-fluid"
+                 style="max-width: 120px;">
+        </div>
+
+        <!-- Navbar -->
+        <div class="col-md-8">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="HomePage.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="courses.html">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ContactUs.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Dashboard.html">Dashboard</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </div>
     <div class="container mt-5 d-flex justify-content-center">
+        
     <div class="card" style="width: 18rem;">
         <img src="std.png" class="card-img-top rounded-circle" alt="Profile Picture" style="border-radius: 50%; object-fit: cover; margin: auto;">
         <div class="card-body text-center">
             <h3 class="card-title">Student Profile</h3>
         </div>
         <div class="card-body text-center">
-            <h5 class="card-title">CNUVAS</h5>
+            <h5 class="card-text">CNUVAS</h5>
             <p class="card-text">Roll Number: 5DW</p>
             <p class="card-text">Branch: Computer Science</p>
             <p class="card-text">Email:cnu@gmail.com</p>
             <a href="#" class="btn btn-primary">Edit Profile</a>    
         </div>
     </div>
+    <script>
+       
+        const urlParams = new URLSearchParams(window.location.search);
+        const rollNumber = urlParams.get("rollNumber");
+        console.log(rollNumber);
+        let students = JSON.parse(localStorage.getItem("students1")) || [];
+
+        const branches = [
+            "Computer Science",
+            "Mechanical Engineering",
+            "Electrical Engineering",
+            "Civil Engineering",
+            "Chemical Engineering"
+        ];
+
+        const std = students.find(student => student.rollNumber === rollNumber);
+        console.log(students);
+        console.log(std);
+        if (std) {
+           
+            const cardTexts = document.querySelectorAll(".card-text");
+            cardTexts[0].innerText = `Name: ${std.fullName}`;
+            cardTexts[1].innerText = `Roll Number: ${std.rollNumber}`;
+            cardTexts[2].innerText = `Branch: ${branches[std.branch]}`;
+            cardTexts[3].innerText = `Email: ${std.email}`;
+        } else {
+            document.querySelector(".card-title").innerText = "Student Not Found";
+        }
+        
+    </script>
 </body>
 </html>
